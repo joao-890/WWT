@@ -1,0 +1,763 @@
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('path-to-opendyslexic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('path-to-lobster.woff2') format('woff2');
+}
+
+:root {
+    --dyslexic: 'OpenDyslexic', 'Lobster', Arial, sans-serif;
+    --normal: "Marmelad", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    /* background-image: url("files/black-felt.png"); */
+    font-family: var(--normal);
+    background-repeat: repeat;
+    overflow: overlay;
+    height: 100% !important;
+    background-color: #ffffff;
+}
+
+/* margin-top:300 */
+/* document.addEventListener('DOMContentLoaded', function () {
+    const marketingButton = document.getElementById('expectations_button');
+    const homeButton = document.getElementById('home_button');
+    const videoButton = document.getElementById('video_button');
+    const commentsButton = document.getElementById('comments_button');
+    const contactsButton = document.getElementById('contacts_button');
+
+    const marketing = document.getElementById('marketing');
+    const home = document.getElementById('home');
+    const video = document.getElementById('video_publicity');
+    const comments = document.getElementById('comments');
+    const contacts = document.getElementById('contact');
+
+    console.log('marketingButton:', marketingButton);
+    console.log('homeButton:', homeButton);
+    console.log('videoButton:', videoButton);
+    console.log('commentsButton:', commentsButton);
+    console.log('contactsButton:', contactsButton);
+
+    console.log('marketing:', marketing);
+    console.log('home:', home);
+    console.log('video:', video);
+    console.log('comments:', comments);
+    console.log('contacts:', contacts);
+
+    marketingButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (marketing) {
+            marketing.scrollIntoView({ behavior: 'smooth' });
+            console.log("marketing section scrolled into view");
+        }
+    });
+
+    homeButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (home) {
+            home.scrollIntoView({ behavior: 'smooth' });
+            console.log("home section scrolled into view");
+        }
+    });
+
+    videoButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (video) {
+            video.scrollIntoView({ behavior: 'smooth' });
+            console.log("video section scrolled into view");
+        }
+    });
+
+    commentsButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (comments) {
+            comments.scrollIntoView({ behavior: 'smooth' });
+            console.log("comments section scrolled into view");
+        }
+    });
+
+    contactsButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (contacts) {
+            contacts.scrollIntoView({ behavior: 'smooth' });
+            console.log("contacts section scrolled into view");
+        }
+    });
+});appearonsmall */
+
+::-webkit-scrollbar {
+    width: 0px;
+    opacity: 1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+nav {
+
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+
+}
+/* pc */
+ul {
+    background-color: #64adb400;
+}
+
+ul,
+li,
+li a {
+
+
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+li,
+li a {
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    font-size: 36px;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+
+.container {
+    margin: 10px 30px 10px 30px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+#logo {
+    margin-left: 20px;
+    width: 120px;
+    height: 130px;
+    height: fit-content;
+    object-fit: contain;
+}
+
+ul {
+    display: flex;
+    position: fixed;
+    margin: auto auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* appearonsmall */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 40px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    background-color: azure;
+}
+
+button img {
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.buttons {
+    display: flex;
+    
+}
+/* mobile_me*/
+#appearonsmall{
+    display: none;
+    z-index: 6;
+}
+
+#appearonbig {
+    display: block;
+}
+#menu_burguer {
+    background-color: #006837;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    margin: auto auto;
+    display: none;
+}
+
+#menu_burguer svg {
+    width: 50px;
+    height: 50px;
+
+}
+
+
+svg {
+    width: 100%;
+    align-items: center;
+
+
+}
+
+header,
+video {
+    position: relative;
+    /* Positioned relative to its normal flow */
+    display: inline-flex;
+    width: 100%;
+    /* Ensures it spans the full width */
+    height: 100vh;
+    /* Makes it take up the full height of the viewport */
+    object-fit: cover;
+    /* Ensures the video/image covers the area */
+    z-index: -1;
+    /* Keeps it behind other content */
+}
+
+#background-video {
+    width: 100%;
+    object-fit: cover;
+}
+
+#destinations {
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+}
+
+#destinations,
+.destination_items img {
+    width: 200px;
+
+
+}
+
+#pc_menu,
+#pc_menu a {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin: auto;
+    max-width: 1500px;
+
+}
+
+#pc_menu {
+    background-color: #64adb4d4;
+
+}
+
+#mobile_menu {
+    display: none;
+    background-color: #64adb4;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    border-radius: 0%;
+    margin: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#menu_burguer {
+    z-index: 7;
+    background-color: #64adb4;
+
+}
+
+path,
+svg {
+    fill: white !important;
+    stroke: rgb(255, 255, 255);
+}
+
+#mobile_menu ul {
+    height: 100vh;
+
+    align-content: center;
+    text-align: center;
+    transform: translateX(110%);
+    opacity: 0;
+    z-index: 7;
+}
+
+#mobile_menu li {
+    margin-bottom: 60px;
+    /* text-align: center; */
+}
+
+li {
+    padding: 10px 20px;
+    margin: auto;
+}
+
+li a {
+    position: relative;
+    display: inline-block;
+    transition: 1s;
+}
+
+li a:hover {
+    font-size: 40px;
+}
+
+li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffffff;
+    transform: translateY(10px);
+    transition: width 500ms, transform 500ms;
+}
+
+li a:hover::after {
+    width: 75px;
+    height: 5px;
+    transform: translateY(-4px);
+
+}
+
+a {
+    /* color:#8CC63F; */
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+
+/* z-index */
+#menu_burguer {
+    position: fixed;
+    right: 4px
+}
+
+#menu_mobile {
+    z-index: 7;
+}
+
+#marketing{
+    display: flex;
+
+}
+.marketing_image{
+    flex:40%
+}
+.marketing_image img{
+   width: auto;
+   height: 100vh;
+}
+.marketing_text{
+    flex: 60%;
+    display: flex;
+   
+}
+.marketing_text p{
+    color:#3D6571;
+    max-width: 1100px;
+    line-height: 80px;
+    position: relative;
+    height: 100%;
+    top:67%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    text-align: center;
+}
+#video_publicity{
+/* div pai */
+    height: 100vh;
+    padding:10vh;
+}
+#publicity-video{
+    width: 100%;
+    height: 100%;
+   background-size: cover;
+}
+
+
+#comments {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #f7f7f7;
+    /* Adjust background as needed */
+}
+
+.carousel-container {
+    display: flex;
+    transition: 500ms;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.carousel-item p {
+    width: 80%;
+    
+    font-size: 40px;
+    margin: 0;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    
+}
+
+.carousel-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    
+    cursor: pointer;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d5f68;
+    padding: 20px;
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container {
+    width: 2500px;
+
+}
+
+/* Left Section: Form */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    color: #ffffff;
+}
+
+.form-section label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #d9d9d9;
+    color: #333;
+    border-radius: 3px;
+}
+
+/* Textarea Style */
+.form-section textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 150px !important;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #88c3c8;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #6fa9b2;
+}
+
+/* Right Section: Image and Logo */
+.image-section {
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 500px;
+}
+
+#most-spoken-languages{
+    display: none;
+    background-color: white;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* Comments */
+
+#most-spoken-languages ul{
+    width: 50%;
+    
+    background-color: rgba(255, 255, 255, 0.853);
+    flex-wrap: wrap;
+}
+
+
+.carousel-item {
+    font-size: 50px !important;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    
+    right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1500px) {
+
+    #logo {
+            position: fixed;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    #pc_menu {
+        display: none;
+    }
+.image-section img{
+    position: relative;
+    width: 60%;
+    text-align: center;
+}
+        #appearonsmall {
+            display:flex;
+            position: absolute;
+                margin-top: 35px;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+
+        #appearonbig {
+            display: none;
+       }
+
+    #menu_burguer,
+    #menu_burguer path {
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+
+    #logo {
+        width: 100px;
+        height: 50px;
+        z-index: 7;
+    }
+
+    
+    button img {
+        height: 20px;
+        width: 20px;
+        margin-right: none;
+    }
+
+    button {
+        padding: 0;
+        margin-right: 1rem;
+        height: 40px;
+        width: 40px;
+    }
+
+        #marketing {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .marketing_image {
+            width: 100%;
+            height: 100vh;
+           
+            flex: none;
+        }
+    
+        .marketing_image img {
+            width: 100%;
+           
+            object-fit: cover;
+            object-position: top;
+            height: 100vh;
+        }
+    
+        .marketing_text {
+            flex: none;
+            top:0px;
+            
+            display: flex;
+    
+        }
+    
+        .marketing_text p {
+            margin: auto auto;
+            font-size: 36px;
+            color: #2e6170;
+            max-width: 1100px;
+            line-height: 80px;
+            position: relative;
+            left: 0%;
+            top: 100%;
+            transform: translate(0%, 0%);
+        }
+}
+
+
+@media only screen and (max-width: 900px) {
+    #video_publicity {
+            /* div pai */
+            height: 100vh;
+            padding: 5vh;
+        }
+                                .carousel-item {
+                                    display: flex;
+                                    /* Enables Flexbox for centering */
+                                    flex-direction: column;
+                                    /* Ensures content stacks vertically */
+                                    justify-content: center;
+                                    /* Centers content vertically */
+                                    align-items: center;
+                                    /* Centers content horizontally */
+                                    text-align: center;
+                                    /* Centers text inside elements */
+                                    width: 100%;
+                                    /* Full width of the container */
+                                    height: 100%;
+                                    /* Ensures vertical centering works */
+                                }
+                
+                                .carousel-item p {
+                                    margin: 0;
+                                    /* Removes default paragraph margins */
+                                    font-size: 30px;
+                                    /* Adjusts font size for better readability */
+                                    text-align: center;
+                                    /* Centers text inside the paragraph */
+                                }
+                
+                                .carousel-item div {
+                                    margin: 0;
+                                    /* Removes default div margins */
+                                    font-size: 40px;
+                                    /* Adjusts font size for star ratings */
+                                    text-align: center;
+                                    /* Ensures stars are centered */
+                                }
+
+                #contact div {
+                    display: flex;
+                    width: 100%;
+                    height: 700px;
+                    flex-direction: column;
+        
+                }
+}
+
+@media only screen and (max-width: 500px) {
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .carousel-item p {
+        font-size: 5vw;
+        line-height: 1.4;
+        margin: 10px 0;
+        max-width: 90%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .carousel-item div {
+        font-size: 6vw;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+/* submit-btn */

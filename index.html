@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Wide Travel</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="files/logo_WWT_simbol.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" !important>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marmelad&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/open-dyslexic.css">
+        <script src="hotels.js" defer></script>
+        <script src="script.js" defer></script>
+        <script src="dyslexic.js"defer></script>
+        <script src="languages.js" defer></script>
+        <script src="audio.js" defer></script>
+        <script src="mobile_menu.js" defer></script>
+    <!-- icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+        
+        <style>
+
+            
+            
+            @media only screen and (max-width: 950px) {
+                #contact{
+                    height: 1600px;
+                }
+            }
+        </style>
+
+</head>
+<body  id="home">
+    <nav>
+        <div id="top">
+            <div class="container">
+                <img id="logo" src="files/logo_WWT.crop.png" alt="">
+                <ul id="pc_menu">
+                    <li><a id="home_button" href="#_home">Home</a></li>
+                    <li><a id="destination_button" href="#_destination">Destinations</a></li>
+                    <li><a id="hotel_button" href="#_hotel">Hotels</a></li>
+                    <li><a id="prices_button" href="#_prices">Prices</a></li>
+                    <li><a id="contacts_button" href="#_contacts" >Contact</a></li>
+                </ul>
+                
+                    <div class="buttons">
+                        
+                    <button onclick="startAudio(index)"><img src="files/image 2(1).png" alt=""></button>
+                    <button onclick="openLanguages()"><img src="files/image 3.png" alt=""></button>
+                    <button onclick="dyslexic()"><img src="files/Dyslexia_Symbol 1(1).png" alt=""></button>
+
+                    
+                    </div>
+                    <button id="menu_burguer" value="closed" onclick="open_mobile()">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg  width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7H19" stroke="#8CC63F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 12L19 12" stroke="#8CC63F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 17L19 17" stroke="#8CC63F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <ul id="mobile_menu">
+                    
+                    <li><a onclick="open_mobile()" id="home_button_mobile" href="#_prices">Home</a></li>
+                    <li><a onclick="open_mobile()" id="destination_button_mobile" href="#_destination">Destinations</a></li>
+                    <li><a onclick="open_mobile()" id="hotel_button_mobile" href="#_hotels">Hotels</a></li>
+                    <li><a onclick="open_mobile()" id="prices_button_mobile" href="#_prices">Prices</a></li>
+                    <li><a onclick="open_mobile()" id="contacts_button_mobile" href="#_prices">Contacts</a></li>
+                </ul>
+        </div>
+        <div id="most-spoken-languages" style="display: none;">
+
+            <ul>
+                <li><i onclick="changeLanguage('englishTexts')" class="flag-icon flag-icon-us"></i></li>
+                <li><i onclick="changeLanguage('chineseTexts')" class="flag-icon flag-icon-cn"></i></li>
+                <li><i onclick="changeLanguage('indianTexts')" class="flag-icon flag-icon-in"></i></li>
+                <li><i onclick="changeLanguage('spanishTexts')" class="flag-icon flag-icon-es"></i></li>
+                <li><i onclick="changeLanguage('portugueseTexts')" class="flag-icon flag-icon-pt"></i></li>
+                <li><i onclick="changeLanguage('arabicTexts')" class="flag-icon flag-icon-sa"></i></li>
+                    
+            </ul>
+        </div>
+        
+                  
+        </div>
+       
+    </nav>
+    
+    <header>
+        <video id="background-video" autoplay loop muted>
+            <source id="background-video" src="files/4133023-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        </video>
+    </header>
+    
+    <section id="destinations">
+        
+        <br><br>
+        
+        <div>
+        <div class="destination_items" id="image_to_top"><img id="image_to_top_img"  src="files/china.jpg" alt=""><p onclick="window.location.href='china.html'" class="destination_text">Great wall of china</p></div></a>
+        <div class="destination_items" id="image_to_bottom"><img id="image_to_bottom_img"  src="files/egypt.jpg" alt=""><p onclick="window.location.href='egypt.html'" class="destination_text">Egypt pyramids</p></div>
+        <div class="destination_items" id="image_to_top"><img id="image_to_top_img"  src="files/paris.jpg" alt=""><p onclick="window.location.href='paris.html'" class="destination_text">Paris</p></div>
+        <div class="destination_items" id="image_to_bottom"><img id="image_to_bottom_img"  src="files/portugal.jpg" alt=""><p onclick="window.location.href='portugal.html'" class="destination_text">Portugal</p></div>
+        <div class="destination_items" id="image_to_top"><img id="image_to_top_img"  src="files/newyork.jpg" alt=""><p onclick="window.location.href='newyork.html'" class="destination_text">new york</p></div>
+        <br><br>
+        </div>
+    </section>
+
+    <section id="hotels" ><div>
+        <div id="hotels_panel_control">
+            <div id="hotels_country" style="width: 100%;">
+                <img id="image_hotels" src="files/china_image.jpg" style="display: block; margin: auto; width: 100%; height: 400px; object-fit: cover;"
+                    alt="Centered Image">
+            </div>
+            <div id="hotels_buttons" style="margin: auto auto;">
+                <button class="buttons_hotels_buttons" 
+                    onclick="change_hotels(chinese_hotel); changeImage('files/china_image.jpg')">china</button>
+                <button class="buttons_hotels_buttons"
+                    onclick="change_hotels(egyptian_hotels); changeImage('files/egypt_image.jpg')">Egypt</button>
+                <button class="buttons_hotels_buttons"
+                    onclick="change_hotels(french_hotels); changeImage('files/france_image.jpg')">France</button>
+                <button class="buttons_hotels_buttons"
+                    onclick="change_hotels(portugal_hotels); changeImage('files/portugal_image.jpg')">Portugal</button>
+                <button class="buttons_hotels_buttons"
+                    onclick="change_hotels(newyork_hotels); changeImage('files/newyork_image.jpg')">New york</button>
+            </div>  
+        </div>
+        <div id="hotels_hotels">
+                <div class="hotel-info">
+                        <div class="hotel-card">
+                            <h3>
+                                <!-- Chinese-themed SVG icon -->
+                                
+                                </svg>Dragon Palace Room
+                            </h3>
+                            <br><br><br>
+                            <p class="hotel-description">Indulge in a room adorned with luxurious Chinese decor and breathtaking views of the Great Wall.</p><br>
+                            <p class="hotel-price">Price: $50/night</p>
+                            <button class="btn-details">Book a room</button>
+                        </div>
+                    </div>
+                    
+                    <div class="hotel-info">
+                        <div class="hotel-card">
+                            <h3>
+                                <!-- Japanese-themed SVG icon -->
+                                
+                                </svg>Sakura Suite
+                            </h3>
+                            <br><br><br>
+                            <p class="hotel-description">Relax in a tranquil Japanese-inspired suite with a view of beautiful cherry blossoms.</p>
+                            <p class="hotel-price">Price: $30/night</p>
+                            <button class="btn-details">Book a room</button>
+                        </div>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-card">
+                            <h3>
+                                Tropical Haven Room
+                            </h3>
+                            <br><br><br>
+                            <p class="hotel-description">Escape to a sunny, tropical paradise with a room designed to evoke beach vibes and relaxation.</p>
+                            <p class="hotel-price">Price: $45/night</p>
+                            <button class="btn-details">Book a room</button>
+                        </div>
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-card">
+                            <h3>
+                                <!-- Japanese Zen-themed SVG icon -->
+                                
+                                </svg>Zen Garden Retreat Room
+                            </h3>
+                            <br><br><br>
+                            <p class="hotel-description">Experience serenity and peace with a room inspired by the calming elements of Japanese Zen gardens.</p>
+                            <p class="hotel-price">Price: ¥600/night</p>
+                            <button class="btn-details">Book a room</button>
+                        </div>
+                        <br><br><br><br><br><br><br><br><br>
+                   
+                </div>
+                
+        <div>
+            
+       
+        
+    </section>
+
+    <section id="prices">
+        <div>
+            <h3>Basic Plan</h3>
+            <br>
+            <ol>
+                <li>Daily breakfast</li>
+                <li>1 Local guided city tour (half-day)</li>
+                <li>Access to hotel pool and fitness center</li>
+                <li>A week trip</li>
+            </ol>
+            <br>
+            <div class="price">499$/◐</div>
+        </div>
+        <div>
+            <h3>Vivid Plan</h3>
+            <br>
+            <ol>
+                <li>Daily breakfast</li>
+                <li>1 Local guided city tour (half-day)</li>
+                <li>Access to hotel pool and fitness center</li>
+                <li>5 Nights at a 4-star hotel</li>
+                <li>1 Full-day guided city and cultural tour</li>
+                <li>Private access to a luxury spa for one treatment</li>
+    
+            </ol>
+            <br>
+            <div class="price">699$/◐</div>
+        </div>
+        <div>
+            <h3>Prime Plan</h3>
+            <br>
+            <ol>
+                <li>24/7 concierge service for personalized</li>
+                <li>1 Local guided city tour (half day)</li>
+                <li>Access to hotel pool and fitness center</li>
+                <li>A week at a 5-star hotel</li>
+                <li>1 Full-day guided city and cultural tour</li>
+                <li>Private access to a luxury spa for one treatment</li>
+                <li>Spa day included</li>
+            </ol>
+            <br>
+            <div class="price">1199$/◐</div>
+
+
+
+        </div>
+    </section>
+    
+    <section id="contact">
+    <div class="container"  >
+        
+        <div class="form-section">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
+    
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+    
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" placeholder="Write your message"></textarea>
+    
+            <input type="submit" class="submit-btn" value="SUBMIT" onclick="handleSubmit(event)"/>
+        </div>
+       
+        
+        <div class="image-section">
+            <img id="image_killthissucker" src="files/logo_WWT.crop.png" alt="Logo or Image">
+        </div>
+    </div>
+
+    
+    <footer
+        style="position: absolute;bottom: 0;width: 100%;background-color: #282828; color:whitesmoke;margin:auto auto;font-size: 24px !important;padding:30px;text-align: center;transform: translateX(-20px);margin: auto auto;">
+        <p>All image rights on the site to: <a href="https://www.pexels.com/">PEXELS</a> and <a
+                href="https://www.freepik.com/vectors/egypt-png">FREEPIK</a></p><br>
+        <p>Texts generated by artificial intelligence</p><br>
+        <p>Developed by João Fonseca</p>
+    </footer>
+
+    
+    </section>
+
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Layout</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: #3d5f68;
+            /* Background color */
+            color: #ffffff;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        /* Left Section: Form */
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 50%;
+            color: #ffffff;
+        }
+
+        .form-section label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-section input,
+        .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            background-color: #d9d9d9;
+            color: #333;
+            border-radius: 3px;
+        }
+
+        /* Textarea Style */
+        .form-section textarea {
+            resize: none;
+            height: 150px;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 150px;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            background-color: #88c3c8;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #6fa9b2;
+        }
+
+        /* Right Section: Image and Logo */
+        .image-section {
+            position: relative;
+            width: 50%;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+         Left Section: Form 
+        <div class="form-section">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" placeholder="Write your message"></textarea>
+
+            <button class="submit-btn">SUBMIT</button>
+        </div>
+
+         Right Section: Placeholder for Image 
+        <div class="image-section">
+            <img src="your-image-path.png" alt="Logo or Image">
+        </div>
+    </div>
+</body>
+
+</html> -->

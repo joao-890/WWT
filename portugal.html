@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portugal turism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="files/logo_WWT_simbol.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marmelad&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="dyslexic_template.js" defer></script>
+    <script src="portugal_languages.js"></script>
+    <link rel="stylesheet" href="templates.css">
+    <script src="audio.js" defer></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+    <style>
+        #home_button.active,
+        #marketing_button.active,
+        #video_button.active,
+        #comments_button.active,
+        #contacts_button.active {
+
+            text-shadow: 0px 0px 0px #ffffff00;
+            background-color: #ffffff;
+            color: #e4b818;
+            transition: 100ms;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="appearonsmall" class="buttons">
+
+        <button onclick="startAudio(portugal)"><img src="files/image 2(1).png" alt=""></button>
+        <button onclick="openLanguages()"><img src="files/image 3.png" alt=""></button>
+        <button onclick="dyslexic()"><img src="files/Dyslexia_Symbol 1(1).png" alt=""></button>
+
+    </div>
+    <nav>
+        <div id="top">
+            <div class="container">
+                <img id="logo" onclick="window.location.href='index.html'" src="files/logo_WWT.crop.png" alt="">
+                <ul id="pc_menu" style="background-color: rgba(255, 149, 2, 0.797);">
+                    <li><a id="home_button" href="#_home">Home</a></li>
+                    <li><a id="marketing_button" href="#_expectations">Expectations</a></li>
+                    <li><a id="video_button" href="#_video">Video</a></li>
+                    <li><a id="comments_button" href="#_prices">Comments</a></li>
+                    <li><a id="contacts_button" href="#_contacts">Contact</a></li>
+                </ul>
+                <div id="appearonbig" class="buttons">
+
+                    <button onclick="startAudio(portugal)"><img src="files/image 2(1).png" alt=""></button>
+                    <button onclick="openLanguages()"><img src="files/image 3.png" alt=""></button>
+                    <button onclick="dyslexic()"><img src="files/Dyslexia_Symbol 1(1).png" alt=""></button>
+
+                </div>
+
+                <button id="menu_burguer" style="background-color: rgba(255, 149, 2, 0.742);" value="closed"
+                    onclick="open_mobile()">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 7H19" stroke="#8CC63F" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M5 12L19 12" stroke="#8CC63F" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M5 17L19 17" stroke="#8CC63F" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <ul id="mobile_menu" style="background-color: rgb(255, 149, 2);">
+
+                <li><a onclick="open_mobile()" id="home_button" href="#home">Home</a></li>
+                <li><a onclick="open_mobile()" id="expectations_button" href="#marketing">Expectations</a></li>
+                <li><a onclick="open_mobile()" id="video_button" href="#video_publicity">Video</a></li>
+                <li><a onclick="open_mobile()" id="comments_button" href="#comments">Comments</a></li>
+                <li><a onclick="open_mobile()" id="contacts_button" href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+
+        </div>
+        
+        <div id="most-spoken-languages" style="display: none;">
+        
+            <ul >
+                <li><i onclick="changeLanguage('englishTexts')" class="flag-icon flag-icon-us"></i></li>
+                <li><i onclick="changeLanguage('chineseTexts')" class="flag-icon flag-icon-cn"></i></li>
+                <li><i onclick="changeLanguage('hindiTexts')" class="flag-icon flag-icon-in"></i></li>
+                <li><i onclick="changeLanguage('spanishTexts')" class="flag-icon flag-icon-es"></i></li>
+                <li><i onclick="changeLanguage('portugueseTexts')" class="flag-icon flag-icon-pt"></i></li>
+                <li><i onclick="changeLanguage('arabicTexts')" class="flag-icon flag-icon-sa"></i></li>
+        
+            </ul>
+        </div>
+
+    </nav>
+
+    <header id="home">
+        <video id="background-video" autoplay loop muted>
+            <source id="background-video" src="files/portugal.mp4" type="video/mp4">
+        </video>
+    </header>
+
+    <section id="marketing">
+        <div class="marketing_image"><img src="files/portugal_1.jpg" alt=""></div>
+        <div class="marketing_text">
+            <p>Embark on an unforgettable journey through Portugal, where history and nature blend seamlessly. From the
+                picturesque streets of Lisbon. Experience vibrant culture,
+                historic landmarks, and delightful Portuguese cuisine—all tailored just for you. Where every moment is
+                filled with discovery and charm. Your dream vacation awaits in Portugal!</p>
+        </div>
+    </section>
+    <section id="video_publicity">
+        <video id="publicity-video" style="z-index:2" muted controls>
+            <source src="files/portugal_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section id="comments">
+        <div class="carousel-container">
+            <div class="carousel-item" id="comment1" style="display: block;text-align: center;left: 50%;transform: translateX(10%);">
+                <p>"My trip to Portugal was absolutely unforgettable! The historic castles were breathtaking, and the
+                    local
+                    pastries were a delight. The tours were well-organized, and the guides were incredibly knowledgeable
+                    and friendly. I felt immersed in the rich history and culture of Portugal. I can't wait to explore
+                    more
+                    with this company!"</p><br>
+                <div
+                    style="margin: auto auto; display: block;text-align: center;left: 50%;transform: translateX(-10%);font-size: 40px;">
+                    ⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="carousel-item" id="comment2" style="display: block;text-align: center;left: 50%;transform: translateX(10%);">
+                <p>"Exploring the Douro River was an incredible experience. The guides ensured everything was smooth and
+                    safe, and the boat accommodations were luxurious. It was the perfect combination of adventure and
+                    relaxation. Highly recommended!"</p>
+                <div
+                    style="margin: auto auto; display: block;text-align: center;left: 50%;transform: translateX(-10%);font-size: 40px;">
+                    ⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="carousel-item" id="comment3" style="display: block;text-align: center;left: 50%;transform: translateX(10%);">
+                <p>"The evening stroll in Porto was a magical adventure. From the city lights to the starry
+                    skies, every moment was enchanting. The guides were friendly and made the experience even more
+                    enjoyable."</p>
+                <div
+                    style="margin: auto auto; display: block;text-align: center;left: 50%;transform: translateX(-10%);font-size: 40px;">
+                    ⭐⭐⭐⭐☆</div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+        </div>
+    </section>
+    <section id="contact" style="background-color: rgb(211, 143, 17);">
+        <div class="container">
+
+            <div class="form-section">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" />
+
+                <label for="message">MESSAGE</label>
+                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+
+                <input type="submit" class="submit-btn" style="background-color: #ffffff;" value="SUBMIT"
+                    onclick="handleSubmit(event)" />
+            </div>
+
+
+            <div class="image-section">
+                <img id="image_killthissucker" src="files/pastel-de-nata.png">
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer
+        style="background-color: #282828; color:whitesmoke;margin:auto auto;font-size: 24px !important;padding:30px;text-align: center;">
+        <p>All image rights on the site to: <a href="https://www.pexels.com/">PEXELS</a> and <a
+                href="https://www.freepik.com/vectors/egypt-png">FREEPIK</a></p><br>
+        <p>Texts generated by artificial intelligence</p><br>
+        <p>Developed by João Fonseca</p>
+    </footer>
+
+
+    <script src="template.js"></script>
+
+</body>
+
+</html>
